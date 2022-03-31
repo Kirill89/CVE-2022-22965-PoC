@@ -1,0 +1,10 @@
+version: "2"
+services:
+  s4sgoof:
+    build: .
+    image: s4sgoof:orig
+    container_name: s4sgoof
+    environment:
+      - DOCKER=1
+    ports:
+      - "8080:8080"
